@@ -19,7 +19,9 @@ DocuMind is a **fully local Retrieval-Augmented Generation (RAG) prototype** tha
 
 ## Demo / screenshot
 
-Run the app locally and capture a screenshot showing a **non-sensitive sample PDF**, a question, the answer, and its retrieved source passages. Add the image to `docs/documind-demo.png`, then embed it here using `![DocuMind AI application demo](docs/documind-demo.png)`. A real screenshot will be added once available; no simulated demo is presented as a real run.
+![DocuMind AI application demo showing local PDF question answering](Screenshot%202026-10-08%20143457.png)
+
+*Actual local Streamlit app showing Ollama status, indexed document chunks, and a page-referenced answer. The screenshot also contains an earlier no-documents message from before indexing.*
 
 ## What it does
 

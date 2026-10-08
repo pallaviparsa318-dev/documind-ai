@@ -1,6 +1,25 @@
 # DocuMind AI 📚
 
+[![Tests](https://github.com/pallaviparsa318-dev/documind-ai/actions/workflows/tests.yml/badge.svg)](https://github.com/pallaviparsa318-dev/documind-ai/actions/workflows/tests.yml)
+
+
 **A local, source-grounded PDF question-answering application.** Built with Python, Streamlit, Ollama, Llama 3.2, `nomic-embed-text`, NumPy vector index and pypdf.
+
+## Project highlights
+
+DocuMind is a **fully local Retrieval-Augmented Generation (RAG) prototype** that lets users explore text-based PDF documents without sending their contents to a hosted language-model API.
+
+| Area | Implementation |
+| --- | --- |
+| Interface | Streamlit PDF upload and question-answering UI |
+| Parsing | `pypdf` with page-aware text extraction |
+| Retrieval | Overlapping chunks, `nomic-embed-text` embeddings, cosine-similarity search in a persistent NumPy index |
+| Generation | Ollama with Llama 3.2 and retrieved source excerpts |
+| Quality checks | `pytest` unit tests run through GitHub Actions |
+
+## Demo / screenshot
+
+Run the app locally and capture a screenshot showing a **non-sensitive sample PDF**, a question, the answer, and its retrieved source passages. Add the image to `docs/documind-demo.png`, then embed it here using `![DocuMind AI application demo](docs/documind-demo.png)`. A real screenshot will be added once available; no simulated demo is presented as a real run.
 
 ## What it does
 
